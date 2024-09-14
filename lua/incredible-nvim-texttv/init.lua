@@ -37,7 +37,6 @@ end
 
 M = {}
 function M.show_page(page_number)
-  print("Show page \n", page_number)
   if not buf or not vim.api.nvim_buf_is_valid(buf) then
     buf = vim.api.nvim_get_current_buf()
     vim.keymap.set('n', '<Tab>', onTab)

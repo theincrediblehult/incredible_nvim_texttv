@@ -81,7 +81,6 @@ function HtmlParsing.get_content(html)
   local header = extract_header(html)
   local body = extract_body(html)
   local footer = extract_footer(html)
-  print("After process", dump(Links))
   local delim = '\n\n-------------------------------------\n'
   return process_anchors(header .. delim .. body .. delim .. footer)
 end
